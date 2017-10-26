@@ -2,5 +2,6 @@
 # Author: Scott Humber (scott@somewhere.com)
 import sys
 
-name = sys.argv[1] if len(sys.argv) > 1 else 'World'
+
+name = raw_input("Enter your name: ")
 print 'Hello, %s!' % name
