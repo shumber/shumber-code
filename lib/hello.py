@@ -1,6 +1,8 @@
 # Default is "World"
 # Author: Scott Humber (scott@somewhere.com)
 import sys
+from greeter import Greeter
 
 name = sys.argv[1] if len(sys.argv) > 1 else 'World'
-print 'Hello, %s!' % name
+greeter = Greeter(name)
+print greeter.greet()
